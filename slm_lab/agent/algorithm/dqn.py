@@ -130,7 +130,7 @@ class VanillaDQN(Algorithm):
             return np.nan
 
     def body_act_discrete(self, body, state):
-        ''' Selects and returns a discrete using the action policy'''
+        ''' Selects and returns a discrete action using the action policy'''
         return self.action_policy(body, state, self.net, self.explore_var)
 
     def update(self):
